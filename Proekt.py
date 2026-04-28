@@ -85,7 +85,6 @@ def main():
         pygame.draw.rect(screen, (35, 37, 40), pass_box, border_radius=10)
         pygame.draw.rect(screen, (55, 58, 62), pass_box, width=2, border_radius=10)
 
-        # Вывод пароля
         pass_surf = font_pass.render(current_password, True, (255, 255, 255))
         pass_text_rect = pass_surf.get_rect(center=pass_box.center)
         screen.blit(pass_surf, pass_text_rect)
